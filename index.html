@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("nav ul li a").on("click", function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $("html, body").animate({
+                        scrollTop: $(hash).offset().top - 50
+                    }, 1500, "easeInOutExpo");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="head-div">
+            <h1 class="name">Sumod Metre</h1>
+            <p class="one"; style="text-align: center;">Learning, Building, and Growing Every Day</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social-links">Connect Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img1.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Sumod, a passionate BCA final-year student at Honr. Annasaheb Dange Arts, Science, Commerce College, Hatkanangle, with a strong interest in full-stack development.
+                <br><br>
+            <b>Frontend : </b> HTML, CSS, JavaScript
+            <b>Backend : </b> Django, PHP
+            <br>
+            <b>Database : </b>MySQL and basic Knowledge of Mongodb , Nosql
+            <br>
+            Currently, I’m learning <b>Django</b> and enhancing my skills in DSA and backend development, while also preparing for internship opportunities and placements. I am eager to apply my technical expertise to real-world projects and contribute to innovative solutions in the tech industry.</p>
+</p>
+    </section>
+
+    <section id="skills" style="text-align: justify;">
+        <p> <h3>Technical Skills
+        </h3><b>Frontend Development : </b>Basic knowledge of HTML, CSS, JavaScript, and Bootstrap for creating simple and responsive web pages. <br>
+        <b>Backend Development : </b> Familiar with Django and PHP for handling server-side logic and building web applications.
+        <br>
+        <b>Database Management : </b> Worked with MySQL for storing and retrieving data in projects. Basic understanding of Mongodb.
+        <br>
+         <b>Deployment : </b> Comfortable using  GitHub for managing code. Basic experience with deployment platforms like PythonAnywhere. <br>
+        <b>Programming Languages : </b> Good understanding of Python and C++, with a focus on writing clean and logical code.
+         <br>
+         Learning and practicing
+        easy to medium level coding question and problem-solving on platforms like Hakcerank.
+        <br>Basic knowledge of Object-Oriented Programming (OOP) 
+        <br>
+        <b>Problem-Solving Mindset : </b>Ability to think logically and find simple solutions to coding challenges. <br>
+        <b>Teamwork & Collaboration : </b> Enjoy working on group projects and learning from team members. <br>
+        <b>Communication Skills : </b>Able to explain ideas clearly and present projects effectively. <br>
+         <b>Adaptability & Eagerness to Learn : </b>Always interested in exploring new technologies and improving coding skills.
+        <br><b>Time Management : </b> Balances studies, coding practice, and projects efficiently. <br>
+        <b>Critical Thinking : </b> Can break down problems into smaller parts to find effective solutions.
+            </p>
+       
+    </section>
+
+    <section id="projects">
+        <p>
+            <h2>Projects</h2>
+             
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download class="btn">Download My Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="https://forms.gle/YOUR_CONTACT_FORM" target="_blank" class="btn">Contact Me</a>
+        <h3>Feedback</h3>
+        <a href="https://forms.gle/YOUR_FEEDBACK_FORM" target="_blank" class="btn">Give Feedback</a>
+    </section>
+
+    <section id="social-links" class="sec-div-3">
+        <h2>Connect Me</h2>
+        <div class="social-icons">
+            <a href="https://github.com/YOUR_GITHUB" target="_blank" class="icon github">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="icon linkedin">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" class="icon instagram" >
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sumod. All rights reserved.</p>
+    </footer>
+</body>
+</html>
