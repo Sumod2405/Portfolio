@@ -1,0 +1,202 @@
+/* Body background and font */
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f9fbff 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styles */
+.custom-navbar {
+  background-color: #004aad !important;
+  height: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.navbar-name {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar-slogan {
+  font-size: 0.9rem;
+  margin: 0;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Welcome Note (intro) */
+.welcome-note {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  padding: 0 30px; /* no vertical padding */
+  color: #222;
+  text-align: center;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.welcome-note h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.welcome-note p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.welcome-note strong {
+  color: #004aad;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #004aad;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 2px solid #003c88;
+}
+
+footer p {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Social Icons container */
+.social-icons {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Social Icon links */
+.social-icons a {
+  display: inline-block;
+  margin: 0 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Social Icon images */
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  /* Remove filter if icons are not black-on-transparent */
+  /* filter: brightness(0) invert(1); */
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* Navbar background */
+.custom-navbar {
+  background-color: #004aad !important;
+  padding: 0.5rem 1rem;
+}
+
+/* Brand text color */
+.brand-text .navbar-name,
+.brand-text .navbar-slogan {
+  color: white;
+}
+
+/* Nav links style */
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline;
+}
+
+/* Default: navbar-collapse has no background or box shadow */
+.navbar-collapse {
+  background: transparent;
+  box-shadow: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* When toggled open (on small screens), show background and box shadow */
+.navbar-collapse.show {
+  background-color: #004aad;
+  padding: 10px 15px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* On mobile: stack nav items vertically */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-link {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+}
+ 
